@@ -1,0 +1,14 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+.container { max-width: 1200px; margin: 12px auto; padding: 12px; }
+.main { display:flex; gap:24px; }
+.left { flex: 1; }
+.right { flex: 1; }
+input, textarea, select { width:100%; padding:8px; margin:6px 0; }
+button { padding:8px 12px; margin-top:6px; cursor:pointer; }
+.card { border-radius:8px; padding:12px; margin:10px 0; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.priority-high { border-left:8px solid #e74c3c; }
+.priority-medium { border-left:8px solid #f1c40f; }
+.priority-low { border-left:8px solid #2ecc71; }
+.score { font-weight:bold; }
+small { color:#555; }
+pre { background:#f7f7f7; padding:8px; border-radius:4px; overflow:auto; }

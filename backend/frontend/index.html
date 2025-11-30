@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Smart Task Analyzer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Load CSS from Django static folder -->
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Task Analyzer</h1>
+    </header>
+
+    <div class="main">
+      <!-- LEFT SIDE -->
+      <div class="left">
+        <h2>Input Tasks</h2>
+        <label for="taskForm">Add task (form)</label>
+
+        <div id="formAdd">
+          <input id="title" placeholder="Title" />
+          <input id="due_date" placeholder="YYYY-MM-DD" />
+          <input id="estimated_hours" placeholder="Estimated hours" type="number" />
+          <input id="importance" placeholder="Importance 1-10" type="number" />
+          <input id="dependencies" placeholder="Dependencies (comma-separated ids)" />
+          <button id="addTask">Add to List</button>
+        </div>
+
+        <h3>Or paste JSON array</h3>
+        <textarea id="taskInput" rows="10"
+          placeholder='[ { "title":"T", "due_date":"2025-12-01", "estimated_hours":2, "importance":7, "dependencies": [] } ]'></textarea>
+
+        <div class="controls">
+          <label for="strategy">Sorting Strategy</label>
+          <select id="strategy">
+            <option value="smart">Smart Balance</option>
+            <option value="fastest">Fastest Wins</option>
+            <option value="impact">High Impact</option>
+            <option value="deadline">Deadline Driven</option>
+          </select>
+
+          <button id="analyzeBtn">Analyze Tasks</button>
+        </div>
+
+        <h4>Local task list (temporary)</h4>
+        <pre id="localList">[]</pre>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right">
+        <h2>Results</h2>
+        <div id="results"></div>
+      </div>
+    </div>
+
+    <footer>
+      <small>Smart Task Analyzer — demo</small>
+    </footer>
+  </div>
+
+  <!-- Load JS at the end of body (correct place!) -->
+  <script src="/static/script.js"></script>
+
+</body>
+</html>
