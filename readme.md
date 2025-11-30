@@ -111,14 +111,14 @@ By combining urgency, importance, effort, and dependency influence, the algorith
 **Total:** ~4.5 to 5 hours
 
 ---
-
+<!-- 
 ## 5. Bonus Challenges Attempted
 
 * ✔ Dependency cycle detection
 * ✔ Score breakdown + explanation
 * ✔ Multiple sorting modes
 * ✔ Auto-merge of form input + JSON input
-* ✔ Clean responsive interface
+* ✔ Clean responsive interface -->
 
 ---
 
