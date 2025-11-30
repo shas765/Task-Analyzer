@@ -121,7 +121,6 @@ By combining urgency, importance, effort, and dependency influence, the algorith
 * ✔ Clean responsive interface -->
 
 ---
-
 ## 5. Future Improvements
 
 If given more time, I would add:
