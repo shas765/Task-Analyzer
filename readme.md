@@ -122,7 +122,7 @@ By combining urgency, importance, effort, and dependency influence, the algorith
 
 ---
 
-## 6. Future Improvements
+## 5. Future Improvements
 
 If given more time, I would add:
 
